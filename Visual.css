@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+background-color:#A0ACAD; /*#97D8B2,#531253,#33032F,#170312*/
+  font-family:'lato',sans-serif;
+}nav{
+  background-color:#170312;
+  color:#fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  z-index: 100;
+  }
+
+nav a{
+  color:#fff;
+  position: relative;
+  margin-left: 30px;
+  text-decoration: none;
+  
+}
+
+nav a::after {
+  content: '';
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  }
+
+nav a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header{
+  background-image:url('https://images.unsplash.com/photo-1585229260143-8d6f99d24c8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+  background-size: cover;
+  background-position: center center;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.text{
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+header::after{
+  content:'';
+  background-color:#000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1{
+  font-size: 65px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  
+}
+
+header p{
+  font-size: 30px;
+  margin: 0;
+}
+
+header h3{
+ margin-left: 40px;
+  margin-right: 40px;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+  color:#fff;
+}
+
+section h2{
+  margin: 0;
+  color: #fff;
+}
+
+section p{
+  margin-top: 0;
+  
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 810px;
+  margin: 40px auto 0;
+  
+  
+}
+
+.projects {
+  margin: 10px;
+  max-width: 900px;
+}
+
+.projects img {
+  max-width: 100%;
+}
+
+.projects p {
+  font-size: 23px;
+  margin-top: 10px;
+  color: #000; 
+  
+  
+}
+
+.bg-pinkish {
+  background-color: #531253;
+  color: #000;
+  
+  
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.social-links a{
+  color:#fff;
+    font-size: 30px;
+  margin: 0 10px;
+  
+  
+}
+
+footer{
+  background-color:#170312;
+  color:#fff;
+  margin:0;
+  padding: 10px;
+  text-align:center
+}       
